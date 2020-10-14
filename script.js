@@ -51,6 +51,9 @@ $(document).ready(function () {
     console.log(selected)
     if(selected.length > 0){
       $(this).attr('disabled', 'disabled');
+    }else{
+      alert('Please Select The Characters For Your Password')
+      location.reload();
     }
     
   })
