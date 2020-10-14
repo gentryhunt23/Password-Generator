@@ -41,7 +41,7 @@ $(document).ready(function () {
     console.log(selected)
    
   })
-
+//commented
   // $("#uppercase").change(function () {
   //   if (!selected.includes(possible.lowerCase)) {
   //     selected.push(possible.lowerCase)
