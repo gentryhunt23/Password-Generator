@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  $('#reset').hide();
   //   // Assignment Code
   // var generateBtn = $("#generate");
   // // Write password to the #password input
@@ -24,24 +25,40 @@ $(document).ready(function () {
 
   //toggle checkbox event handler
   $("#confirm").click(function(){
+    //if($('.check-group').prop('checked')){
       $(".check-group").attr('disabled', 'disabled');
+      $(this).prop('disabled', true)
+      $('#generate').prop('disabled', false);
+      $('#reset').show();
+
+  //  }
+
   })
 
   $("#generate").click(function () {
     if($("#numbers").prop("checked")){
       selected.push(numbers)
-    }else{
-      selected.splice(numbers)
+    }
+    if($("#uppercase").prop("checked")){
+      selected.push(upperCase)
     }
     if($("#lowercase").prop("checked")){
       selected.push(lowerCase)
-    }else{
-      selected.splice(lowerCase)
+    }
+    if($("#special-char").prop("checked")){
+      selected.push(specialCharacters)
     }
     console.log(selected)
-   
+    if(selected.length > 0){
+      $(this).attr('disabled', 'disabled');
+    }
+    
   })
-//commented
+
+  $("#reset").click(function () {
+    location.reload();
+    })
+
   // $("#uppercase").change(function () {
   //   if (!selected.includes(possible.lowerCase)) {
   //     selected.push(possible.lowerCase)
