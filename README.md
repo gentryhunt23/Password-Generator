@@ -1,4 +1,3 @@
-
 Password Generator: 
     In today's web society, unique usernames and passwords are elements that are required by the majority of web platforms and services. Most individuals have already created a username for one web service that they use regularly and many times repeatedly use that specific set of characters for multiple usernames on different websites. However, using the same usernames AND passwords for multple websites and login credentials poses a threat to a users cyper secutity and compromises an individuals privacy. 
 
